@@ -3,6 +3,6 @@ on: issues
 jobs:
   issue:
     runs-on: ubuntu-latest
-    jobs:
+    steps:
       - name: Running ouptut context for issue
         run: echo "{{ toJson(github)  }}"
