@@ -1,0 +1,8 @@
+name: hands-on 3
+on: issues
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    jobs:
+      - name: Running ouptut context for issue
+        run: echo "{{ toJson(github)  }}"
